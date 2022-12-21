@@ -1,0 +1,13 @@
+{
+    "name": "acf/sample",
+    "title": "Sample",
+    "description": "A simple sample.",
+    "category": "sample-category",
+    "icon": "megaphone",
+    "keywords": [
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "sample.php"
+    }
+}

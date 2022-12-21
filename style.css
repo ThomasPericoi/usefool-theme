@@ -1,0 +1,486 @@
+/*
+Theme Name: Sample
+Theme URI: https://thomaspericoi.com/
+Author: Thomas Pericoi
+Author URI: https://thomaspericoi.com/
+Description: A bootstrap theme for me.
+Requires at least: 5.9
+Tested up to: 6.0.2
+Text Domain: sample
+*/
+
+/* #Imports
+--------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+/* #Variables
+--------------------------------------------------------------- */
+
+:root {
+  --black: #090909;
+  --white: #fffffb;
+
+  --bold: "Open Sans", sans-serif;
+  --body: "Open Sans", sans-serif;
+
+  --spacing-section: 4rem;
+  --spacing-title: 1em;
+}
+
+/* #WordPress Core
+-------------------------------------------------------------- */
+
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: var(--white);
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+/* #Reset
+--------------------------------------------------------------- */
+
+a,
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+button,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  height: 100%;
+}
+
+b,
+strong {
+  font-weight: bold;
+  font-weight: 700;
+}
+
+img {
+  font-size: 0;
+  color: transparent;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td,
+caption {
+  font-weight: inherit;
+  vertical-align: top;
+  text-align: left;
+}
+
+small {
+  font-size: 70%;
+}
+
+p:empty {
+  display: none !important;
+}
+
+button,
+input {
+  font: unset;
+  outline: 0;
+}
+
+/* #Base
+--------------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--primary-4);
+}
+
+::-moz-selection {
+  background: var(--primary-4);
+}
+
+/* #Typography
+--------------------------------------------------------------- */
+
+body {
+  font-family: var(--body);
+  line-height: 1.5;
+  color: var(--primary-3);
+  background-color: var(--white);
+}
+
+body,
+p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 767px) {
+  body,
+  p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  body,
+  p {
+    font-size: 20px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-family: var(--bold);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--primary-1);
+  -webkit-font-smoothing: antialiased;
+}
+
+h5,
+h6 {
+  line-height: 1.4;
+}
+
+h1,
+.h1-size {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 767px) {
+  h1,
+  .h1-size {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h1,
+  .h1-size {
+    font-size: 50px;
+  }
+}
+
+h2,
+.h2-size {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 767px) {
+  h2,
+  .h2-size {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h2,
+  .h2-size {
+    font-size: 38px;
+  }
+}
+
+h3,
+.h3-size {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 767px) {
+  h3,
+  .h3-size {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h3,
+  .h3-size {
+    font-size: 32px;
+  }
+}
+
+h4,
+.h4-size {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 767px) {
+  h4,
+  .h4-size {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h4,
+  .h4-size {
+    font-size: 26px;
+  }
+}
+
+h5,
+.h5-size {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 767px) {
+  h5,
+  .h5-size {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h5,
+  .h5-size {
+    font-size: 23px;
+  }
+}
+
+h6,
+.h6-size {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 767px) {
+  h6,
+  .h6-size {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h6,
+  .h6-size {
+    font-size: 20px;
+  }
+}
+
+/* #Structure
+--------------------------------------------------------------- */
+
+/* Containers */
+.container {
+  max-width: 720px;
+  position: relative;
+  margin: 0 auto;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+/* #Elements
+--------------------------------------------------------------- */
+
+/* Buttons */
+
+/* #Templates
+--------------------------------------------------------------- */
+
+/* #Blocks
+--------------------------------------------------------------- */
