@@ -1,12 +1,12 @@
 /*
-Theme Name: Sample
+Theme Name: Usefool
 Theme URI: https://thomaspericoi.com/
 Author: Thomas Pericoi
 Author URI: https://thomaspericoi.com/
-Description: A bootstrap theme for me.
+Description: A Wordpress boilerplate theme for me and my projects. To be improved over the years.
 Requires at least: 5.9
-Tested up to: 6.0.2
-Text Domain: sample
+Tested up to: 6.0.3
+Text Domain: usefool
 */
 
 /* #Imports
@@ -23,9 +23,6 @@ Text Domain: sample
 
   --bold: "Open Sans", sans-serif;
   --body: "Open Sans", sans-serif;
-
-  --spacing-section: 4rem;
-  --spacing-title: 1em;
 }
 
 /* #Base
@@ -238,10 +235,14 @@ h6,
 /* #Elements
 --------------------------------------------------------------- */
 
-/* Buttons */
+/* #Blocks
+--------------------------------------------------------------- */
+
+/* #Template Parts
+--------------------------------------------------------------- */
 
 /* #Templates
 --------------------------------------------------------------- */
 
-/* #Blocks
+/* #Pages
 --------------------------------------------------------------- */
