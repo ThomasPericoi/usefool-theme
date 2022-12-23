@@ -1,0 +1,12 @@
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--primary-4);
+}
+
+::-moz-selection {
+  background: var(--primary-4);
+}
