@@ -23,5 +23,5 @@ $(document).ready(function () {
   );
 
   // General - Enable ASCII Printer on random
-  printAsciiRandom();
+  printRandomAscii();
 });
