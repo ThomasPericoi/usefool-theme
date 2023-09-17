@@ -4,9 +4,9 @@ html {
 }
 
 ::selection {
-  background: var(--primary-4);
+  background: var(--primary);
 }
 
 ::-moz-selection {
-  background: var(--primary-4);
+  background: var(--primary);
 }
