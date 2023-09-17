@@ -1,4 +1,5 @@
-/* Typography */
+/* #Typography
+--------------------------------------------------------------- */
 body {
   font-family: var(--body);
   line-height: 1.5;
@@ -9,6 +10,7 @@ body {
 body,
 p {
   font-size: 16px;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 768px) {

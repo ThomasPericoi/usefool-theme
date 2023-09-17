@@ -1,0 +1,24 @@
+/* #Content
+--------------------------------------------------------------- */
+.formatted>*:not(:nth-last-child(1)) {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.formatted>ul li {
+    padding-left: 30px;
+    margin-bottom: 0.65em;
+    position: relative;
+    text-indent: 0;
+}
+
+.formatted>ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1em;
+    left: 5px;
+    border: 5px solid var(--secondary);
+    border-radius: 50%;
+    transform: translateY(-80%);
+}

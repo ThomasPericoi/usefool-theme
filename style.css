@@ -23,6 +23,7 @@ Text Domain: usefool
 --------------------------------------------------------------- */
 
 @import "./assets/css/base/base.css";
+@import "./assets/css/base/content.css";
 @import "./assets/css/base/typography.css";
 
 /* #Elements
