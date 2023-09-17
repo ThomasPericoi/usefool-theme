@@ -1,44 +1,32 @@
 /* #Imports
 --------------------------------------------------------------- */
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 @font-face {
     font-family: "OpenDyslexic";
-    src: url("../fonts/OpenDyslexic-Regular.woff");
-    src: url("../fonts/OpenDyslexic-Regular.woff") format("woff"),
-        url("../fonts/OpenDyslexic-Regular.woff2") format("woff2"),
-        url("../fonts/OpenDyslexic-Regular.otf") format("opentype");
+    src: url("../fonts/OpenDyslexic-Regular.otf");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "OpenDyslexic";
-    src: url("../fonts/OpenDyslexic-Italic.woff");
-    src: url("../fonts/OpenDyslexic-Italic.woff") format("woff"),
-        url("../fonts/OpenDyslexic-Italic.woff2") format("woff2"),
-        url("../fonts/OpenDyslexic-Italic.otf") format("opentype");
+    src: url("../fonts/OpenDyslexic-Italic.otf");
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: "OpenDyslexic";
-    src: url("../fonts/OpenDyslexic-Bold.woff");
-    src: url("../fonts/OpenDyslexic-Bold.woff") format("woff"),
-        url("../fonts/OpenDyslexic-Bold.woff2") format("woff2"),
-        url("../fonts/OpenDyslexic-Bold.otf") format("opentype");
+    src: url("../fonts/OpenDyslexic-Bold.otf");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "OpenDyslexic";
-    src: url("../fonts/OpenDyslexic-BoldItalic.woff");
-    src: url("../fonts/OpenDyslexic-BoldItalic.woff") format("woff"),
-        url("../fonts/OpenDyslexic-BoldItalic.woff2") format("woff2"),
-        url("../fonts/OpenDyslexic-BoldItalic.otf") format("opentype");
+    src: url("../fonts/OpenDyslexic-BoldItalic.otf");
     font-weight: 700;
     font-style: italic;
 }
