@@ -2,11 +2,19 @@
 
 <!-- Footer -->
 <footer>
-    <div class="container">
-        <!-- OpenDyslexic Toggle -->
-        <div>
-            <input type="checkbox" id="open-dyslexic" name="open-dyslexic" />
-            <label for="open-dyslexic">Switch to OpenDyslexic</label>
+    <div id="main-footer">
+        <div class="container">
+
+        </div>
+    </div>
+    <div id="sub-footer">
+        <div class="container">
+            <?php wp_nav_menu(array('theme_location' => 'sub-footer-menu', 'container' => false, 'depth' => 1)); ?>
+            <!-- OpenDyslexic Toggle -->
+            <div class="dyslexic-toggle">
+                <input type="checkbox" id="open-dyslexic" name="open-dyslexic" />
+                <label for="open-dyslexic"><?php echo __('Enable OpenDyslexic', 'usefool'); ?></label>
+            </div>
         </div>
     </div>
 </footer>

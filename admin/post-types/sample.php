@@ -1,17 +1,17 @@
 <?php
 $labels = [
-    'name' => 'Samples',
-    'singular_name' => 'Sample',
-    'add_new' => 'Add',
-    'add_new_item' => 'Add a sample',
-    'edit_item' => 'Edit the sample',
-    'new_item' => 'New sample',
-    'view_item' => 'View the sample',
-    'search_items' => 'Search a sample',
-    'not_found' =>  'No sample found.',
-    'all_items' => 'All sample',
-    'not_found_in_trash' => 'No sample found in the trash.',
-    'parent_item_colon' => ''
+    'name' => __('Samples', 'usefool'),
+    'singular_name' => __('Sample', 'usefool'),
+    'add_new' => __('Ajouter', 'usefool'),
+    'add_new_item' => __('Add a sample', 'usefool'),
+    'edit_item' => __('Edit the sample', 'usefool'),
+    'new_item' => __('New sample', 'usefool'),
+    'view_item' => __('View the sample', 'usefool'),
+    'search_items' => __('Search a sample', 'usefool'),
+    'not_found' =>  __('No sample found.', 'usefool'),
+    'all_items' => __('All sample', 'usefool'),
+    'not_found_in_trash' => __('No sample found in the trash.', 'usefool'),
+    'parent_item_colon' => __('', 'usefool'),
 ];
 
 $args = [

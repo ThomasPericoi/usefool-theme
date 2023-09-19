@@ -1,0 +1,10 @@
+/* #Footer
+--------------------------------------------------------------- */
+/* Sub footer */
+.dyslexic-toggle {
+    font-family: 'OpenDyslexic', sans-serif;
+}
+
+.dyslexic-toggle>* {
+    cursor: pointer;
+}

@@ -56,7 +56,8 @@ function register_menus()
 {
     register_nav_menus(
         array(
-            'header-menu' => 'Header Menu',
+            'header-menu' => __('Header Menu', 'usefool'),
+            'sub-footer-menu' =>  __('Sub-footer Menu', 'usefool'),
         )
     );
 }

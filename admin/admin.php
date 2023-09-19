@@ -6,14 +6,14 @@
 // Add options page
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page(array(
-        'page_title'    => 'Theme options',
-        'menu_title'    => 'Theme options',
+        'page_title'    => __('Theme options', 'usefool'),
+        'menu_title'    => __('Theme options', 'usefool'),
         'menu_slug'     => 'options',
         'capability'    => 'edit_pages',
         'redirect'      => true,
         'position'      => 2,
-        'update_button' => 'Update',
-        'updated_message' => 'All good.',
+        'update_button' => __('Update', 'usefool'),
+        'updated_message' => __('All good', 'usefool'),
         'icon_url'      => 'dashicons-info'
     ));
 }
@@ -39,7 +39,7 @@ function register_custom_taxonomy()
         'sample',
         array('post', 'page'),
         array(
-            'label' => 'Sample Taxonomies',
+            'label' => __('Sample taxonomy', 'usefool'),
             'public' => false,
             'show_ui' => true,
             'show_in_menu' => true,
@@ -72,7 +72,7 @@ function register_block_category($categories, $post)
         array(
             array(
                 'slug' => 'sample-category',
-                'title' => 'Sample',
+                'title' => __('Sample category', 'usefool'),
             ),
         )
     );
