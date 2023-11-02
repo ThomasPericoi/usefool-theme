@@ -2,7 +2,7 @@
 $labels = [
     'name' => __('Samples', 'usefool'),
     'singular_name' => __('Sample', 'usefool'),
-    'add_new' => __('Ajouter', 'usefool'),
+    'add_new' => __('Add', 'usefool'),
     'add_new_item' => __('Add a sample', 'usefool'),
     'edit_item' => __('Edit the sample', 'usefool'),
     'new_item' => __('New sample', 'usefool'),
@@ -34,9 +34,9 @@ $args = [
     ],
     'taxonomies' => [],
     'has_archive' => false,
-    'rewrite' => ['slug' => 'cas-clients', 'with_front' => true],
+    'rewrite' => ['slug' => 'sample', 'with_front' => true],
     'menu_position' => 6,
-    'menu_icon' => 'dashicons-awards',
+    'menu_icon' => 'dashicons-carrot',
 ];
 
 register_post_type('sample', $args);
