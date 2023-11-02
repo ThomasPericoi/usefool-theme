@@ -12,7 +12,7 @@
             <?php wp_nav_menu(array('theme_location' => 'sub-footer-menu', 'menu_class' => 'menu menu-sub-footer', 'container' => false, 'depth' => 1)); ?>
             <!-- OpenDyslexic Toggle -->
             <div class="dyslexic-toggle">
-                <input type="checkbox" id="open-dyslexic" name="open-dyslexic" />
+                <input type="checkbox" id="open-dyslexic" name="open-dyslexic" class="screen-reader-only" />
                 <label for="open-dyslexic"><?php echo __('Enable OpenDyslexic', 'usefool'); ?></label>
             </div>
         </div>
