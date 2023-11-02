@@ -43,4 +43,45 @@ document.addEventListener("DOMContentLoaded", function () {
       disableDyslexicMode();
     }
   });
+
+  // General - Elements is in view
+  function toggleClassOnScroll(trigger, target) {
+    if (trigger && target) {
+      var elementTop = trigger.getBoundingClientRect().top;
+      if (elementTop > window.innerHeight * 0.15 && elementTop < window.innerHeight * 0.85) {
+        target.classList.add("js-inView");
+      } else {
+        target.classList.remove("js-inView");
+      }
+    }
+  }
+  function markAsViewed(trigger, target) {
+    if (trigger && target) {
+      if (trigger && target) {
+        var elementTop = trigger.getBoundingClientRect().top;
+        if (elementTop > window.innerHeight * 0.15 && elementTop < window.innerHeight * 0.85) {
+          target.classList.add("js-viewed");
+        }
+      }
+    }
+  }
+  window.addEventListener("scroll", () => {
+    document.querySelectorAll(".js-toBeTriggered").forEach(function (item, index) {
+      toggleClassOnScroll(item, item);
+    });
+    document.querySelectorAll("main section").forEach(function (item, index) {
+      markAsViewed(item, item);
+    });
+  });
+  document.querySelectorAll(".js-toBeTriggered").forEach(function (item, index) {
+    toggleClassOnScroll(item, item);
+  });
+  document.querySelectorAll("main section").forEach(function (item, index) {
+    markAsViewed(item, item);
+  });
+
+  // Header - Menu
+  document.querySelectorAll(".menu-header-desktop>li>a").forEach(function (item) {
+    item.tabIndex = 0;
+  });
 }); 

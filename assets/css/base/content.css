@@ -2,23 +2,116 @@
 --------------------------------------------------------------- */
 .formatted>*:not(:nth-last-child(1)) {
     margin-top: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-.formatted>ul li {
+/* List */
+.formatted ul>li,
+.formatted ol>li {
     padding-left: 30px;
     margin-bottom: 0.65em;
     position: relative;
     text-indent: 0;
 }
 
-.formatted>ul li:before {
-    content: "";
+.formatted ol>li {
+    counter-increment: item;
+}
+
+.formatted ul>li:before,
+.formatted ol>li:before {
     display: block;
     position: absolute;
     top: 1em;
     left: 5px;
-    border: 5px solid var(--secondary);
+}
+
+.formatted ul>li:before {
+    content: "";
+    border: 5px solid var(--primary);
     border-radius: 50%;
     transform: translateY(-80%);
+}
+
+.formatted ol>li:before {
+    content: counter(item);
+    color: var(--primary);
+    font-weight: 700;
+    transform: translateY(-70%);
+}
+
+.formatted ul ul,
+.formatted ol ol {
+    margin-top: 0.65em;
+}
+
+/* Quote */
+.wp-block-quote {
+    position: relative;
+    padding: 1rem 1rem 1rem 2rem;
+    border-left: 5px solid var(--secondary);
+}
+
+.wp-block-quote>*:not(:nth-last-child(1)) {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.wp-block-quote:before {
+    content: "\201C";
+    height: 40px;
+    display: block;
+    font-size: 4em;
+    font-family: var(--bold);
+    color: var(--secondary);
+    line-height: 1em;
+}
+
+.wp-block-quote cite {
+    display: block;
+    text-align: right;
+    font-family: var(--bold);
+    font-weight: 700;
+}
+
+/* Tables */
+.wp-block-table.is-style-stripes {
+    border-spacing: 0;
+    border-collapse: inherit;
+    background-color: transparent;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.wp-block-table {
+    overflow-x: auto;
+}
+
+.wp-block-table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.wp-block-table.is-style-stripes td,
+.wp-block-table.is-style-stripes th {
+    border-color: transparent;
+}
+
+.wp-block-table th {
+    background-color: var(--secondary);
+    font-weight: bold;
+}
+
+.wp-block-table td,
+.wp-block-table th {
+    border: 1px solid;
+    padding: 0.5em;
+    vertical-align: middle;
+}
+
+.has-text-align-center {
+    text-align: center;
 }

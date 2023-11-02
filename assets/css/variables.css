@@ -5,9 +5,27 @@
   --black: #090909;
   --white: #fffffb;
 
+  --primary: var(--black);
+  --secondary: var(--black);
+  
   /* Fonts */
   --bold: "Open Sans", sans-serif;
   --body: "Open Sans", sans-serif;
 
   /* Spacings */
+  --spacing-section-inner: 3rem;
+  --spacing-section-outer: 6rem;
+  --spacing-title: 1em;
+
+  /* Radius */
+  --border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    /* Spacings */
+    --spacing-section-inner: 4rem;
+    --spacing-section-outer: 8rem;
+    --spacing-title: 1.25em;
+  }
 }

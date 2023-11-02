@@ -20,6 +20,14 @@
                 }
                 ?>
                 <?php wp_nav_menu(array('theme_location' => 'header-menu', 'menu_class' => 'menu menu-header', 'container' => false)); ?>
+                <div class="menu-toggle-col">
+                    <div class="menu-toggle-wrapper">
+                        <input id="menu-toggle" class="menu-toggle" type="checkbox" role="button" tabindex="0" aria-label="Ouvrir le menu" />
+                        <div class="menu-toggle-open" aria-hidden="true">
+                            <span aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>

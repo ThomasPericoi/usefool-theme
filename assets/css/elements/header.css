@@ -1,2 +1,104 @@
 /* #Header
 --------------------------------------------------------------- */
+#header {
+    width: 100%;
+    position: relative;
+    z-index: 99;
+}
+
+#header .inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+}
+
+#header .custom-logo {
+    width: 100%;
+    max-width: 135px;
+    height: auto;
+}
+
+/* Toggle */
+.menu-toggle-col {
+    width: 30px;
+    transition: opacity ease 350ms;
+}
+
+.menu-toggle-wrapper {
+    position: relative;
+}
+
+#menu-toggle {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#menu-toggle:focus+div {
+    outline: dashed 1px var(--black);
+    outline-offset: 6px;
+}
+
+.menu-toggle-open {
+    max-width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+
+.menu-toggle-open>span {
+    margin-top: 13px;
+}
+
+.menu-toggle-open>span,
+.menu-toggle-open>span:before,
+.menu-toggle-open>span:after {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    display: block;
+    background-color: var(--black);
+}
+
+.menu-toggle-open>span:before,
+.menu-toggle-open>span:after {
+    width: 20px;
+    right: 0;
+}
+
+.menu-toggle-open>span:before {
+    content: "";
+    margin-top: -13px;
+    transition: width ease 350ms;
+}
+
+.menu-toggle-open>span:after {
+    content: "";
+    margin-top: 13px;
+    transition: width ease 350ms 90ms;
+}
+
+.menu-toggle-wrapper:hover .menu-toggle-open>span:before,
+.menu-toggle-wrapper:focus .menu-toggle-open>span:before,
+.menu-toggle-wrapper:hover .menu-toggle-open>span:after,
+.menu-toggle-wrapper:focus .menu-toggle-open>span:after {
+    width: 30px;
+}

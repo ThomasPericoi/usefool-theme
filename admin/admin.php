@@ -78,3 +78,16 @@ function register_block_category($categories, $post)
     );
 }
 add_filter('block_categories_all', 'register_block_category', 10, 2);
+
+/* USER ROLE(S)
+--------------------------------------------------------------- */
+
+// Add and delete roles
+function manage_user_roles()
+{
+    remove_role('subscriber');
+    remove_role('editor');
+    remove_role('contributor');
+    remove_role('author');
+}
+add_action('init', 'manage_user_roles');

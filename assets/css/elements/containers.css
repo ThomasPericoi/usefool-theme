@@ -1,4 +1,4 @@
-/* #Container
+/* #Containers
 --------------------------------------------------------------- */
 .container {
   max-width: 720px;
@@ -22,6 +22,44 @@
 
 @media screen and (min-width: 1920px) {
   .container {
+    max-width: 1400px;
+  }
+}
+
+/* Small */
+@media screen and (min-width: 992px) {
+  .container-sm {
+    max-width: 800px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-sm {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container-sm {
+    max-width: 1200px;
+  }
+}
+
+/* Large */
+@media screen and (min-width: 992px) {
+  .container-lg {
+    max-width: 1050px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-lg {
+    max-width: 1400px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container-lg {
     max-width: 1600px;
   }
 }
