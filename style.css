@@ -22,6 +22,7 @@ Text Domain: usefool
 /* #Base
 --------------------------------------------------------------- */
 
+@import "./assets/css/base/animations.css";
 @import "./assets/css/base/base.css";
 @import "./assets/css/base/content.css";
 @import "./assets/css/base/typography.css";
@@ -29,9 +30,11 @@ Text Domain: usefool
 /* #Elements
 --------------------------------------------------------------- */
 
+@import "./assets/css/elements/buttons.css";
 @import "./assets/css/elements/containers.css";
 @import "./assets/css/elements/footer.css";
 @import "./assets/css/elements/header.css";
+@import "./assets/css/elements/medias.css";
 
 /* #Blocks
 --------------------------------------------------------------- */
@@ -44,3 +47,6 @@ Text Domain: usefool
 
 /* #Pages
 --------------------------------------------------------------- */
+
+@import "./assets/css/pages/404.css";
+@import "./assets/css/pages/front-page.css";

@@ -1,7 +1,7 @@
 </main>
 
 <!-- Footer -->
-<footer>
+<footer id="footer">
     <div id="main-footer">
         <div class="container">
 
