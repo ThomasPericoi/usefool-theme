@@ -48,7 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function toggleClassOnScroll(trigger, target) {
     if (trigger && target) {
       var elementTop = trigger.getBoundingClientRect().top;
-      if (elementTop > window.innerHeight * 0.15 && elementTop < window.innerHeight * 0.85) {
+      var elementBottom = trigger.getBoundingClientRect().bottom;
+      if ((elementTop > window.innerHeight * 0.1 && elementTop < window.innerHeight * 0.6) || (elementBottom > window.innerHeight * 0.4 && elementBottom < window.innerHeight * 0.9)) {
         target.classList.add("js-inView");
       } else {
         target.classList.remove("js-inView");
@@ -59,7 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (trigger && target) {
       if (trigger && target) {
         var elementTop = trigger.getBoundingClientRect().top;
-        if (elementTop > window.innerHeight * 0.15 && elementTop < window.innerHeight * 0.85) {
+        var elementBottom = trigger.getBoundingClientRect().bottom;
+        if ((elementTop > window.innerHeight * 0.1 && elementTop < window.innerHeight * 0.6) || (elementBottom > window.innerHeight * 0.4 && elementBottom < window.innerHeight * 0.9)) {
           target.classList.add("js-viewed");
         }
       }
