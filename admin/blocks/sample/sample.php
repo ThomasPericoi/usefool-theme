@@ -14,7 +14,8 @@
 
 $text = get_field('text') ?: 'Lorem Ipsum';
 
-$classes = 'sample';
+$classes = array('sample-block');
+$classes  = implode(' ', $classes);
 if (!empty($block['className'])) {
     $classes .= ' ' . $block['className'];
 }
