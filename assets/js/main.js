@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("OpenDyslexic est activé");
   }
   function disableDyslexicMode() {
-    document.querySelector(':root').style.setProperty('--body', "Ubuntu, sans-serif");
-    document.querySelector(':root').style.setProperty('--bold', "Ubuntu, sans-serif");
+    document.querySelector(':root').style.setProperty('--body', "Open Sans, sans-serif");
+    document.querySelector(':root').style.setProperty('--bold', "Open Sans, sans-serif");
     sessionStorage.setItem("dyslexicMode", false);
     console.log("OpenDyslexic est désactivé");
   }
@@ -83,7 +83,52 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Header - Menu
-  document.querySelectorAll(".menu-header-desktop>li>a").forEach(function (item) {
-    item.tabIndex = 0;
+  document
+    .querySelectorAll("header .menu-header>li>a")
+    .forEach(function (item) {
+      item.tabIndex = 0;
+    });
+
+  document.querySelectorAll(".menu-toggle").forEach(function (item) {
+    item.addEventListener("click", function () {
+      document.querySelector("body").classList.toggle("js-menuOpened");
+      document.querySelector("main").toggleAttribute("inert");
+      document
+        .querySelector("main")
+        .setAttribute(
+          "aria-hidden",
+          !(document.querySelector("main").getAttribute("aria-hidden") == "true"
+            ? true
+            : false)
+        );
+      document.querySelector(".super-menu").toggleAttribute("inert");
+      document
+        .querySelector(".super-menu")
+        .setAttribute(
+          "aria-hidden",
+          !(document.querySelector(".super-menu").getAttribute("aria-hidden") ==
+            "true"
+            ? true
+            : false)
+        );
+      document.querySelector("footer").toggleAttribute("inert");
+      document
+        .querySelector("footer")
+        .setAttribute(
+          "aria-hidden",
+          !(document.querySelector("footer").getAttribute("aria-hidden") ==
+            "true"
+            ? true
+            : false)
+        );
+    });
+  });
+
+  document.querySelectorAll("#menu-toggle").forEach(function (item) {
+    item.addEventListener("keydown", (event) => {
+      if (event.code === "Enter") {
+        item.click();
+      }
+    });
   });
 }); 

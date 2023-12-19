@@ -5,8 +5,8 @@
   --black: #090909;
   --white: #fffffb;
 
-  --primary: var(--black);
-  --secondary: var(--black);
+  --primary: #c1d4ff;
+  --secondary: #fc8686;
   
   /* Fonts */
   --bold: "Open Sans", sans-serif;

@@ -57,7 +57,10 @@ function register_menus()
     register_nav_menus(
         array(
             'header-menu' => __('Header Menu', 'usefool'),
-            'sub-footer-menu' =>  __('Sub-footer Menu', 'usefool'),
+            'main-footer-menu-1' => __('Main footer Menu 1', 'usefool'),
+            'main-footer-menu-2' => __('Main footer Menu 2', 'usefool'),
+            'main-footer-menu-3' => __('Main footer Menu 3', 'usefool'),
+            'sub-footer-menu' => __('Sub-footer Menu', 'usefool'),
         )
     );
 }

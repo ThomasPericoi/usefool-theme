@@ -1,2 +1,35 @@
 /* #Buttons
 --------------------------------------------------------------- */
+.btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-wrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.btn {
+    height: 30px;
+    padding: 0.4rem 1.4rem;
+    box-sizing: content-box;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: var(--bold);
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--black);
+    border: 0;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: color ease 350ms, background-color ease 350ms, border ease 350ms;
+}
