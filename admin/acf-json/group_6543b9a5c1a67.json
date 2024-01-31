@@ -38,11 +38,11 @@
             "esc_html": 0
         },
         {
-            "key": "field_6543ba38f9cf8",
+            "key": "field_65ba71f437e4f",
             "label": "Button n°1",
             "name": "header_button_1",
             "aria-label": "",
-            "type": "link",
+            "type": "group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -51,14 +51,54 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_6543ba38f9cf8",
+                    "label": "Content",
+                    "name": "content",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_65ba7166b30e0",
+                    "label": "Icon",
+                    "name": "icon",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "field_65ba6ec622ff4"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
         },
         {
-            "key": "field_6543ba6ff9cf9",
+            "key": "field_65ba765ae0185",
             "label": "Button n°2",
             "name": "header_button_2",
             "aria-label": "",
-            "type": "link",
+            "type": "group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -67,7 +107,47 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_65ba765be0187",
+                    "label": "Content",
+                    "name": "content",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_65ba765be0188",
+                    "label": "Icon",
+                    "name": "icon",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "field_65ba6ec622ff4"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
         },
         {
             "key": "field_6543be273435c",
@@ -310,11 +390,11 @@
             ]
         },
         {
-            "key": "field_6543be363435d",
+            "key": "field_65ba79589d52c",
             "label": "Button",
             "name": "footer_button",
             "aria-label": "",
-            "type": "link",
+            "type": "group",
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
@@ -323,7 +403,47 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_6543be363435d",
+                    "label": "Content",
+                    "name": "content",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_65ba79b29d52d",
+                    "label": "Icon",
+                    "name": "icon",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "field_65ba6ec622ff4"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
         },
         {
             "key": "field_65ba10270f3b7",
@@ -474,5 +594,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706695665
+    "modified": 1706720439
 }

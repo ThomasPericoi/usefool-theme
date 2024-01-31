@@ -27,21 +27,23 @@
                 <?php endif;
                 endif; ?>
                 <?php wp_nav_menu(array('theme_location' => 'header-menu', 'menu_class' => 'menu menu-header', 'container' => false)); ?>
-                <?php if ($button_1 || $button_2) : ?>
+                <?php if ($button_1['content'] || $button_2['content']) : ?>
                     <div class="btn-wrapper">
-                        <?php if ($button_1) :
-                            $button_1_url = $button_1['url'];
-                            $button_1_title = $button_1['title'];
-                            $button_1_target = $button_1['target'] ? $button_1['target'] : '_self';
+                        <?php if ($button_1['content']) :
+                            $button_1_url = $button_1['content']['url'];
+                            $button_1_title = $button_1['content']['title'];
+                            $button_1_target = $button_1['content']['target'] ? $button_1['content']['target'] : '_self';
+                            $button_1_icon = $button_1['icon'];
                         ?>
-                            <a href="<?php echo $button_1_url; ?>" target="<?php echo $button_1_target; ?>" class="btn btn-outline-dark"><?php echo $button_1_title; ?></a>
+                            <a href="<?php echo $button_1_url; ?>" target="<?php echo $button_1_target; ?>" class="btn <?php if ($button_1_icon != "none") : ?>btn-icon-<?php echo $button_1_icon; ?><?php endif; ?>"><?php echo $button_1_title; ?></a>
                         <?php endif; ?>
-                        <?php if ($button_2) :
-                            $button_2_url = $button_2['url'];
-                            $button_2_title = $button_2['title'];
-                            $button_2_target = $button_2['target'] ? $button_2['target'] : '_self';
+                        <?php if ($button_2['content']) :
+                            $button_2_url = $button_2['content']['url'];
+                            $button_2_title = $button_2['content']['title'];
+                            $button_2_target = $button_2['content']['target'] ? $button_2['content']['target'] : '_self';
+                            $button_2_icon = $button_2['icon'];
                         ?>
-                            <a href="<?php echo $button_2_url; ?>" target="<?php echo $button_2_target; ?>" class="btn btn-primary"><?php echo $button_2_title; ?></a>
+                            <a href="<?php echo $button_2_url; ?>" target="<?php echo $button_2_target; ?>" class="btn <?php if ($button_2_icon != "none") : ?>btn-icon-<?php echo $button_2_icon; ?><?php endif; ?>"><?php echo $button_2_title; ?></a>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>
@@ -68,21 +70,23 @@
                     </svg>
                 </button>
                 <?php wp_nav_menu(array('theme_location' => 'header-menu', 'menu_class' => 'menu menu-header menu-header-mobile', 'container' => false)); ?>
-                <?php if ($button_1 || $button_2) : ?>
+                <?php if ($button_1['content'] || $button_2['content']) : ?>
                     <div class="btn-wrapper">
-                        <?php if ($button_1) :
-                            $button_1_url = $button_1['url'];
-                            $button_1_title = $button_1['title'];
-                            $button_1_target = $button_1['target'] ? $button_1['target'] : '_self';
+                        <?php if ($button_1['content']) :
+                            $button_1_url = $button_1['content']['url'];
+                            $button_1_title = $button_1['content']['title'];
+                            $button_1_target = $button_1['content']['target'] ? $button_1['content']['target'] : '_self';
+                            $button_1_icon = $button_1['icon'];
                         ?>
-                            <a href="<?php echo $button_1_url; ?>" target="<?php echo $button_1_target; ?>" class="btn"><?php echo $button_1_title; ?></a>
+                            <a href="<?php echo $button_1_url; ?>" target="<?php echo $button_1_target; ?>" class="btn <?php if ($button_1_icon != "none") : ?>btn-icon-<?php echo $button_1_icon; ?><?php endif; ?>"><?php echo $button_1_title; ?></a>
                         <?php endif; ?>
-                        <?php if ($button_2) :
-                            $button_2_url = $button_2['url'];
-                            $button_2_title = $button_2['title'];
-                            $button_2_target = $button_2['target'] ? $button_2['target'] : '_self';
+                        <?php if ($button_2['content']) :
+                            $button_2_url = $button_2['content']['url'];
+                            $button_2_title = $button_2['content']['title'];
+                            $button_2_target = $button_2['content']['target'] ? $button_2['content']['target'] : '_self';
+                            $button_2_icon = $button_2['icon'];
                         ?>
-                            <a href="<?php echo $button_2_url; ?>" target="<?php echo $button_2_target; ?>" class="btn"><?php echo $button_2_title; ?></a>
+                            <a href="<?php echo $button_2_url; ?>" target="<?php echo $button_2_target; ?>" class="btn <?php if ($button_2_icon != "none") : ?>btn-icon-<?php echo $button_2_icon; ?><?php endif; ?>"><?php echo $button_2_title; ?></a>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>

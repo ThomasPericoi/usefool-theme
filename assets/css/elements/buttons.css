@@ -34,3 +34,37 @@
     cursor: pointer;
     transition: color ease 350ms, background-color ease 350ms, border ease 350ms;
 }
+
+/* Icon */
+.btn[class*="btn-icon"] {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn[class*="btn-icon"]:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-size: 20px 20px;
+    transform: translateX(0);
+    transition: transform ease 350ms;
+    filter: invert(1);
+}
+
+.btn-icon-chevron-right:after {
+    background-image: url(../../icons/chevron-right.svg);
+}
+
+.btn-icon-download:after {
+    background-image: url(../../icons/download.svg);
+}
+
+.btn-icon-external-link:after {
+    background-image: url(../../icons/external-link.svg);
+}
+
+.btn-icon-mail:after {
+    background-image: url(../../icons/mail.svg);
+}

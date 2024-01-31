@@ -78,12 +78,13 @@ $open_dyslexic_label = get_field('footer_open_dyslexic_label', 'option') ?: __('
                     </div>
                 <?php endif; ?>
             </div>
-            <?php if ($button) :
-                $button_url = $button['url'];
-                $button_title = $button['title'];
-                $button_target = $button['target'] ? $button['target'] : '_self';
+            <?php if ($button['content']) :
+                $button_url = $button['content']['url'];
+                $button_title = $button['content']['title'];
+                $button_target = $button['content']['target'] ? $button['content']['target'] : '_self';
+                $button_icon = $button['icon'];
             ?>
-                <a href="<?php echo $button_url; ?>" target="<?php echo $button_target; ?>" class="btn btn-primary"><?php echo $button_title; ?></a>
+                <a href="<?php echo $button_url; ?>" target="<?php echo $button_target; ?>" class="btn <?php if ($button_icon != "none") : ?>btn-icon-<?php echo $button_icon; ?><?php endif; ?>"><?php echo $button_title; ?></a>
             <?php endif; ?>
         </div>
     </div>
