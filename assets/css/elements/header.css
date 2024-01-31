@@ -13,6 +13,13 @@
     gap: 3em;
 }
 
+#header .custom-logo-link {
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--bold);
+    font-weight: 700;
+}
+
 #header .custom-logo {
     width: 100%;
     max-width: 86px;
@@ -135,6 +142,7 @@
 /* Toggle */
 .menu-toggle-col {
     width: 30px;
+    padding: 2rem 1em;
     transition: opacity ease 350ms;
 }
 

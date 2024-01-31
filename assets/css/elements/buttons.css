@@ -15,7 +15,7 @@
 }
 
 .btn {
-    height: 30px;
+    height: 40px;
     padding: 0.4rem 1.4rem;
     box-sizing: content-box;
     position: relative;
@@ -26,6 +26,7 @@
     font-size: 1em;
     font-family: var(--bold);
     font-weight: 400;
+    text-align: center;
     color: var(--white);
     background-color: var(--black);
     border: 0;

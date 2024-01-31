@@ -17,10 +17,15 @@
         <div class="container">
             <div class="inner-header">
                 <?php
-                if (function_exists('the_custom_logo')) {
-                    the_custom_logo();
-                }
-                ?>
+                if (function_exists('the_custom_logo')) :
+                    if (has_custom_logo()) :
+                        the_custom_logo();
+                    else : ?>
+                        <a href="<?php echo site_url(); ?>" class="custom-logo-link h5-size">
+                            <?php echo get_bloginfo(); ?>
+                        </a>
+                <?php endif;
+                endif; ?>
                 <?php wp_nav_menu(array('theme_location' => 'header-menu', 'menu_class' => 'menu menu-header', 'container' => false)); ?>
                 <?php if ($button_1 || $button_2) : ?>
                     <div class="btn-wrapper">

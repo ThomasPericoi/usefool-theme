@@ -12,11 +12,34 @@
     margin-bottom: var(--spacing-section-inner);
 }
 
+#footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4em;
+}
+
+@media screen and (min-width: 768px) {
+
+    #footer .container {
+        flex-direction: row;
+    }
+}
+
+#main-footer .custom-logo-link {
+    margin: 0 auto 1em auto;
+    display: block;
+    text-decoration: none;
+    color: var(--black);
+    text-align: center;
+    font-family: var(--bold);
+    font-weight: 700;
+}
+
 #main-footer .custom-logo {
     width: 100%;
     max-width: 86px;
     height: auto;
-    margin: 0 auto 1em auto;
     display: block;
 }
 
@@ -42,8 +65,7 @@
     transform: rotate(12deg);
 }
 
-#footer .container,
-#footer .menus {
+#main-footer .menus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -51,20 +73,24 @@
 }
 
 @media screen and (min-width: 768px) {
-
-    #footer .container,
-    #footer .menus {
+    #main-footer .menus {
         flex-direction: row;
     }
 }
 
-@media screen and (min-width: 768px) {
-    #main-footer .menus {
-        gap: 4em;
-    }
+#main-footer .menus>* {
+    flex: 1 1 0;
 }
 
-#main-footer .menu-main-footer h3 {
+#main-footer .widgets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+#main-footer .menu-main-footer h3,
+#main-footer .widgets h3 {
     margin-bottom: 7px;
     color: var(--black);
     font-weight: 600;
