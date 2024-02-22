@@ -82,11 +82,23 @@
     flex: 1 1 0;
 }
 
+#main-footer ul.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 #main-footer .widgets {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1em;
+}
+
+#main-footer .widgets .list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 #main-footer .menu-main-footer h3,

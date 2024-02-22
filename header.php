@@ -26,7 +26,9 @@
                         </a>
                 <?php endif;
                 endif; ?>
-                <?php wp_nav_menu(array('theme_location' => 'header-menu', 'menu_class' => 'menu menu-header', 'container' => false)); ?>
+                <?php if (has_nav_menu('header-menu')) :
+                    wp_nav_menu(array('theme_location' => 'header-menu', 'menu_class' => 'menu menu-header', 'container' => false));
+                endif; ?>
                 <?php if ($button_1['content'] || $button_2['content']) : ?>
                     <div class="btn-wrapper">
                         <?php if ($button_1['content']) :

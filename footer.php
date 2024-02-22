@@ -51,7 +51,7 @@ $open_dyslexic_label = get_field('footer_open_dyslexic_label', 'option') ?: __('
                                     <h3 class="h5-size"><?php echo $title; ?></h3>
                                 <?php endif; ?>
                                 <?php if ($text) : ?>
-                                    <div>
+                                    <div class="list">
                                         <?php echo $text; ?>
                                     </div>
                                 <?php endif; ?>

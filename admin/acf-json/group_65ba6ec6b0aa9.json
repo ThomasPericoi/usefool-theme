@@ -21,7 +21,10 @@
                 "chevron-right": "Chevron right",
                 "download": "Download",
                 "external-link": "External link",
-                "mail": "Mail"
+                "heart": "Heart",
+                "mail": "Mail",
+                "phone": "Phone",
+                "plus": "Plus"
             },
             "default_value": "none",
             "return_format": "value",
@@ -50,5 +53,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706720936
+    "modified": 1706892378
 }

@@ -65,6 +65,18 @@
     background-image: url(../../icons/external-link.svg);
 }
 
+.btn-icon-heart:after {
+    background-image: url(../../icons/heart.svg);
+}
+
 .btn-icon-mail:after {
     background-image: url(../../icons/mail.svg);
+}
+
+.btn-icon-phone:after {
+    background-image: url(../../icons/phone.svg);
+}
+
+.btn-icon-plus:after {
+    background-image: url(../../icons/plus.svg);
 }
